@@ -1,0 +1,224 @@
+2024-06-09 15:57:23 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 22947 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-09 15:57:23 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-09 15:57:23 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 15:57:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-09 15:57:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 2 MongoDB repository interfaces.
+2024-06-09 15:57:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-09 15:57:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-09 15:57:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-09 15:57:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-09 15:57:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-09 15:57:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3526 ms
+2024-06-09 15:57:26 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'unauthorisedHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.spring.jwt.mongo.project.security.jwt.AuthEntryPointJwt' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-09 15:57:27 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-09 15:57:27 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-06-09 15:57:27 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-09 15:57:27 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field unauthorisedHandler in org.spring.jwt.mongo.project.security.WebSecurityConfig required a bean of type 'org.spring.jwt.mongo.project.security.jwt.AuthEntryPointJwt' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.spring.jwt.mongo.project.security.jwt.AuthEntryPointJwt' in your configuration.
+
+2024-06-09 15:59:16 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 23030 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-09 15:59:16 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-09 15:59:16 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 15:59:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-09 15:59:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 MongoDB repository interfaces.
+2024-06-09 15:59:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-09 15:59:18 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-09 15:59:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-09 15:59:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-09 15:59:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-09 15:59:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2140 ms
+2024-06-09 15:59:18 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-09 15:59:19 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-09 15:59:19 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-06-09 15:59:19 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-09 15:59:19 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailsService in org.spring.jwt.mongo.project.security.WebSecurityConfig required a bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' in your configuration.
+
+2024-06-09 15:59:30 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 23097 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-09 15:59:30 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-09 15:59:30 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 15:59:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-09 15:59:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 MongoDB repository interfaces.
+2024-06-09 15:59:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-09 15:59:31 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-09 15:59:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-09 15:59:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-09 15:59:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-09 15:59:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+2024-06-09 15:59:31 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-09 15:59:31 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-09 15:59:31 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-06-09 15:59:31 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-09 15:59:31 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailsService in org.spring.jwt.mongo.project.security.WebSecurityConfig required a bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.spring.jwt.mongo.project.security.services.UserDetailsServiceImpl' in your configuration.
+
+2024-06-09 16:00:08 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 23168 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-09 16:00:08 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-09 16:00:08 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 16:00:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-09 16:00:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 MongoDB repository interfaces.
+2024-06-09 16:00:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-09 16:00:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-09 16:00:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-09 16:00:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-09 16:00:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-09 16:00:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1250 ms
+2024-06-09 16:00:10 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-09 16:00:12 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationJwtTokenFilter': Unsatisfied dependency expressed through field 'jwtUtils'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.spring.jwt.mongo.project.security.jwt.JwtUtils' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-09 16:00:12 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-09 16:00:12 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='666584327bcd4913bd274101', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+ java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+ java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+ java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+ app//com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:342)
+ app//com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:96)
+ app//com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:44)
+ app//com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:73)
+ app//com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:182)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+ java.base@11.0.22/java.lang.Thread.run(Thread.java:829)
+2024-06-09 16:00:12 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='666584327bcd4913bd274101', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+ java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+ java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+ java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+ app//com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:342)
+ app//com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:96)
+ app//com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:44)
+ app//com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:73)
+ app//com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:182)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.initialize(DefaultServerMonitor.java:422)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:400)
+ java.base@11.0.22/java.lang.Thread.run(Thread.java:829)
+2024-06-09 16:00:12 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-06-09 16:00:12 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-09 16:00:12 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtUtils in org.spring.jwt.mongo.project.security.jwt.AuthTokenFilter required a bean of type 'org.spring.jwt.mongo.project.security.jwt.JwtUtils' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.spring.jwt.mongo.project.security.jwt.JwtUtils' in your configuration.
+
+2024-06-09 16:00:39 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 23244 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-09 16:00:39 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-09 16:00:39 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 16:00:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-09 16:00:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 MongoDB repository interfaces.
+2024-06-09 16:00:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-09 16:00:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-09 16:00:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-09 16:00:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-09 16:00:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-09 16:00:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1250 ms
+2024-06-09 16:00:41 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-09 16:00:41 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:68}] to localhost:27017
+2024-06-09 16:00:41 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:67}] to localhost:27017
+2024-06-09 16:00:41 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=53738140}
+2024-06-09 16:00:41 DEBUG o.s.j.m.p.s.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2024-06-09 16:00:42 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+2024-06-09 16:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-09 16:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-06-09 16:00:42 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-09 16:00:42 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-09 16:00:42 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-06-09 16:00:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-06-09 16:00:42 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Started SpringBootSecurityJwtMongodbApplication in 3.698 seconds (JVM running for 4.1)
+2024-06-09 16:05:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-09 16:05:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4264041d
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5fecf9b
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-09 16:05:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/hello", parameters={}
+2024-06-09 16:05:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#getHello()
+2024-06-09 16:05:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2024-06-09 16:05:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Hello Guest How May I help you!!"]
+2024-06-09 16:05:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-09 16:08:07 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signin", parameters={}
+2024-06-09 16:08:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#authenticateUser(LoginRequest)
+2024-06-09 16:08:08 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.LoginRequest@f892eed]
+2024-06-09 16:08:09 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:69}] to localhost:27017
+2024-06-09 16:08:11 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-09 16:08:11 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.JwtResponse@6aaf6738]
+2024-06-09 16:08:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

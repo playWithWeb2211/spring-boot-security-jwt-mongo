@@ -1,0 +1,189 @@
+2024-06-08 17:50:03 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 16145 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-08 17:50:03 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-08 17:50:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-08 17:50:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 2 MongoDB repository interfaces.
+2024-06-08 17:50:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-08 17:50:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:50:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-08 17:50:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-08 17:50:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-08 17:50:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1508 ms
+2024-06-08 17:50:05 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-08 17:50:05 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:53}] to localhost:27017
+2024-06-08 17:50:05 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:54}] to localhost:27017
+2024-06-08 17:50:05 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42689054}
+2024-06-08 17:50:05 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+2024-06-08 17:50:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-08 17:50:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+2024-06-08 17:50:06 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-08 17:50:06 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-08 17:50:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:50:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-06-08 17:50:06 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Started SpringBootSecurityJwtMongodbApplication in 3.673 seconds (JVM running for 4.29)
+2024-06-08 17:50:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08 17:50:20 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@183f894d
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5c854e51
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-08 17:50:20 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 17:50:20 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 17:50:20 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@43e8ffb4]
+2024-06-08 17:50:20 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:55}] to localhost:27017
+2024-06-08 17:50:20 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 17:50:20 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@40a66ce7]
+2024-06-08 17:50:20 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-06-08 17:51:45 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 16306 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-08 17:51:45 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-08 17:51:45 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-08 17:51:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-08 17:51:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 2 MongoDB repository interfaces.
+2024-06-08 17:51:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-08 17:51:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:51:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-08 17:51:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-08 17:51:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-08 17:51:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2024-06-08 17:51:47 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-08 17:51:47 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:57}] to localhost:27017
+2024-06-08 17:51:47 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:56}] to localhost:27017
+2024-06-08 17:51:47 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22952783}
+2024-06-08 17:51:47 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+2024-06-08 17:51:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-08 17:51:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+2024-06-08 17:51:47 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-08 17:51:47 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-08 17:51:47 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:51:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-06-08 17:51:47 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Started SpringBootSecurityJwtMongodbApplication in 2.877 seconds (JVM running for 3.326)
+2024-06-08 17:52:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08 17:52:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@171d2829
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@697baf0a
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-08 17:52:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 17:52:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 17:52:00 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@52020730]
+2024-06-08 17:52:00 DEBUG o.s.j.m.p.controller.AuthController - Inside Sign up method
+2024-06-08 17:52:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:58}] to localhost:27017
+2024-06-08 17:52:00 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 17:52:00 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@63e32ca2]
+2024-06-08 17:52:00 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-06-08 17:57:21 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 16477 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-08 17:57:21 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-08 17:57:21 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-08 17:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-08 17:57:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 MongoDB repository interfaces.
+2024-06-08 17:57:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-08 17:57:22 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:57:22 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-08 17:57:22 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-08 17:57:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-08 17:57:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1185 ms
+2024-06-08 17:57:22 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-08 17:57:22 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:59}] to localhost:27017
+2024-06-08 17:57:22 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:60}] to localhost:27017
+2024-06-08 17:57:22 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19024090}
+2024-06-08 17:57:23 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+2024-06-08 17:57:23 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-08 17:57:23 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+2024-06-08 17:57:23 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-08 17:57:23 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-08 17:57:23 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-06-08 17:57:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-06-08 17:57:23 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Started SpringBootSecurityJwtMongodbApplication in 2.844 seconds (JVM running for 3.302)
+2024-06-08 17:57:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08 17:57:36 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@701d8789
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5ff13f07
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-08 17:57:36 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 17:57:36 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 17:57:36 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@199276a2]
+2024-06-08 17:57:36 DEBUG o.s.j.m.p.controller.AuthController - Inside registerUser method
+2024-06-08 17:57:36 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:61}] to localhost:27017
+2024-06-08 17:57:36 ERROR o.s.j.m.p.controller.AuthController - Username is already taken
+2024-06-08 17:57:36 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 17:57:36 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@c30fcd1]
+2024-06-08 17:57:36 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-06-08 17:57:58 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 17:57:58 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 17:57:58 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@3706897b]
+2024-06-08 17:57:58 DEBUG o.s.j.m.p.controller.AuthController - Inside registerUser method
+2024-06-08 17:57:58 ERROR o.s.j.m.p.controller.AuthController - Email is already in use!
+2024-06-08 17:57:58 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 17:57:58 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@39c171eb]
+2024-06-08 17:57:58 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2024-06-08 17:59:26 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 17:59:26 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 17:59:26 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@1ab2a83]
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Inside registerUser method
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Creating new User with Username : amit and email : testAmit@gmail.com
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Adding mod role : org.spring.jwt.mongo.project.models.Role@474e5d00
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Adding user role : org.spring.jwt.mongo.project.models.Role@17e34e1a
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Saving User Details ......
+2024-06-08 17:59:26 DEBUG o.s.j.m.p.controller.AuthController - Successfully Saved User Details ......
+2024-06-08 17:59:26 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 17:59:26 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@5efaf3ab]
+2024-06-08 17:59:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-08 18:01:02 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Starting SpringBootSecurityJwtMongodbApplication using Java 11.0.22 on sumit-Inspiron-5570 with PID 16682 (/home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo/target/classes started by sumit in /home/sumit/Documents/CodeWorkspace/Sep16_6_25PM/jwt-spring-security-mongo)
+2024-06-08 18:01:02 DEBUG o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2024-06-08 18:01:02 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-08 18:01:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-08 18:01:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 2 MongoDB repository interfaces.
+2024-06-08 18:01:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-06-08 18:01:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-06-08 18:01:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-08 18:01:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-06-08 18:01:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-08 18:01:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1243 ms
+2024-06-08 18:01:04 INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2024-06-08 18:01:04 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:62}] to localhost:27017
+2024-06-08 18:01:04 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:63}] to localhost:27017
+2024-06-08 18:01:04 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14185800}
+2024-06-08 18:01:05 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+2024-06-08 18:01:05 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-08 18:01:05 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+2024-06-08 18:01:05 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-08 18:01:05 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-08 18:01:05 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-06-08 18:01:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-06-08 18:01:05 INFO  o.s.j.m.p.SpringBootSecurityJwtMongodbApplication - Started SpringBootSecurityJwtMongodbApplication in 2.996 seconds (JVM running for 3.445)
+2024-06-08 18:01:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08 18:01:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44ca6dd5
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@44151406
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-08 18:01:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-08 18:01:29 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/signup", parameters={}
+2024-06-08 18:01:29 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.spring.jwt.mongo.project.controller.AuthController#registerUser(SignupRequest)
+2024-06-08 18:01:29 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [org.spring.jwt.mongo.project.payload.request.SignupRequest@22b375c4]
+2024-06-08 18:01:29 DEBUG o.s.j.m.p.controller.AuthController - 
+
+
+
+2024-06-08 18:01:29 DEBUG o.s.j.m.p.controller.AuthController - **************************************************************************************
+2024-06-08 18:01:29 DEBUG o.s.j.m.p.controller.AuthController - Inside registerUser method
+2024-06-08 18:01:30 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:64}] to localhost:27017
+2024-06-08 18:01:30 DEBUG o.s.j.m.p.controller.AuthController - Creating new User with Username : pallavi | email : testPallavi@gmail.com
+2024-06-08 18:01:30 DEBUG o.s.j.m.p.controller.AuthController - Adding mod role : ROLE_MODERATOR
+2024-06-08 18:01:30 DEBUG o.s.j.m.p.controller.AuthController - Adding user role : ROLE_USER
+2024-06-08 18:01:30 DEBUG o.s.j.m.p.controller.AuthController - Saving User Details ......
+2024-06-08 18:01:30 DEBUG o.s.j.m.p.controller.AuthController - Successfully Saved User Details ......
+2024-06-08 18:01:30 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-06-08 18:01:30 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [org.spring.jwt.mongo.project.payload.response.MessageResponse@6da91970]
+2024-06-08 18:01:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
